@@ -17,7 +17,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Limelight', cursive;
     color: black;
     font-size: 1rem;
 }
@@ -37,7 +37,7 @@ li {
 }
 header {
     height: 300px;
-    width: 1100px;
+    width: auto;
     border: 1px black;
     background-color: var(--main-color);
 }
@@ -61,18 +61,92 @@ header nav ul {
     margin-top: 3rem;
 }
 
-.main-section ul {
+.main-section {
+    height: 300px;
+    width: auto;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    background-color: var(--secondary-color);
 }
-.main-section ul li {
+.main-section li {
     margin-right: 3rem;
     margin-left: 1rem;
 }
-.main-section ul:last-child img {
-    width: 300px;
-    height: auto;
+.main-section li:first-child {
+    display: flex;
+    flex-direction: column;
+}
+.main-section li:first-child div {
+    display: flex;
+}
+.main-section li:first-child div img {
+    display: flex;
+    border-radius: 50%;
 }
 
+.main-section li:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+.main-section li:nth-child(2) img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 50%;
+}
+
+.main-section li:last-child div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+.main-section li:last-child div img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.last-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--main-red);
+}
+.last-section div:first-child {
+    margin-left: 6rem;
+    margin-top: var(--secondary-margin);
+    text-align: center;
+    align-items: flex-end;
+
+}
+
+.last-section div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+footer {
+    height: 50px;
+    width: auto;
+    background-color: black;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+footer nav li {
+    color: white;
+}
